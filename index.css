@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+h1 {
+  color: cornflowerblue;
+}
+
+.dflex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  min-width: 100px;
+  min-height: 100px;
+  background-color: wheat;
+}
