@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Issue Collector</title>
-    <link href="index.css" rel="stylesheet" />
-    <script
-      type="text/javascript"
-      src="https://gnatha.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/ghu3zc/b/20/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=54bc392a"
-    ></script>
 
-    <script
-      type="text/javascript"
-      src="https://gnatha.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/ghu3zc/b/20/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=d8e224cf"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Issue Collector</title>
+  <link href="index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css" />
 
-    <script type="text/javascript">
-      window.ATL_JQ_PAGE_PROPS = {
-        d8e224cf: {
-          triggerFunction: function(showCollectorDialog) {
-            jQuery('#cf').click(function(e) {
-              e.preventDefault();
-              showCollectorDialog();
-            });
-          }
-        },
-        '54bc392a': {
-          triggerFunction: function(showCollectorDialog) {
-            jQuery('#cbug').click(function(e) {
-              e.preventDefault();
-              showCollectorDialog();
-            });
-          }
+  <script type="text/javascript"
+    src="https://gnatha.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/ghu3zc/b/20/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=54bc392a"></script>
+
+  <script type="text/javascript"
+    src="https://gnatha.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/ghu3zc/b/20/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=d8e224cf"></script>
+
+  <script type="text/javascript">
+    window.ATL_JQ_PAGE_PROPS = {
+      d8e224cf: {
+        triggerFunction: function (showCollectorDialog) {
+          jQuery('#cf').click(function (e) {
+            e.preventDefault();
+            showCollectorDialog();
+          });
         }
-      };
-    </script>
-  </head>
-  <body>
-    <h1>Electrea</h1>
+      },
+      '54bc392a': {
+        triggerFunction: function (showCollectorDialog) {
+          jQuery('#cbug').click(function (e) {
+            e.preventDefault();
+            showCollectorDialog();
+          });
+        }
+      }
+    };
+  </script>
 
-    <div class="dflex">
-      <button class="btn" id="cbug">Create Bug</button>
-      <button class="btn" id="cf">Submit an idea</button>
+
+</head>
+
+<body>
+
+  <section class="hero is-medium is-info is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">
+          Electrea
+        </h1>
+      </div>
     </div>
-  </body>
+  </section>
+
+    <section class="hero">
+    <div class="hero-body">
+      <h1 class="title is-1">
+      </h1>
+    </div>
+  </section>
+  <div class="container">
+      <button class="button is-danger is-large" id="cbug">Create Bug</button>
+      <button class="button is-primary is-large" id="cf">Submit an idea</button>
+  </div>
+
+  </div>
+</body>
+
 </html>
